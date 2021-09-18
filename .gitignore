@@ -1,0 +1,6 @@
+.sass-cache
+*.sass-cache
+
+# Project exclude paths
+/node_modules/
+/test/assets/js/

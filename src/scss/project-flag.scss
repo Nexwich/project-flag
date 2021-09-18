@@ -1,0 +1,82 @@
+// Время выполнения анимации
+$delay: 1s;
+
+// Не изменяеммые параметры
+$percent: 33.33%;
+$time: $delay * 4;
+
+.project-flag {
+  display: inline-block;
+  transform: matrix(1, -.1, 0, 1, 0, 0);
+  position: relative;
+
+  .--animation {
+    animation-duration: $time;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  @for $i from 0 through 4 {
+
+    .--delay-#{$i} {
+      animation-delay: -($delay * $i);
+    }
+  }
+}
+
+.project-flag--strings {
+  position: absolute;
+  bottom: 0;
+  left: -$percent;
+  overflow: hidden;
+
+  &:first-child {
+    position: relative;
+  }
+
+  &.--active {
+    position: absolute;
+    width: $percent;
+  }
+
+  &.--animation {
+    animation-name: project-flag--strings;
+  }
+}
+
+.project-flag--box {
+  bottom: 0;
+  left: 100%;
+  position: relative;
+
+  &.--animation {
+    animation-name: project-flag--box;
+  }
+}
+
+@keyframes project-flag--strings {
+
+  from {
+    left: -$percent;
+    bottom: 0;
+  }
+
+  33.33% {
+    bottom: 0;
+  }
+
+  to {
+    left: 100%;
+    bottom: 20%;
+  }
+}
+@keyframes project-flag--box {
+
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: -300%;
+  }
+}

@@ -1,0 +1,145 @@
+@import "compass/reset";
+@import "./project-flag";
+
+.demo {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+.demo-element {
+  margin: 10px;
+}
+
+.demo-text {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 1em;
+  font-weight: 900;
+  line-height: 1.2;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.demo-image {
+
+  img {
+    display: block;
+  }
+}
+
+.demo-border {
+  outline: 1px dashed pink;
+}
+
+.demo-bg {
+  position: absolute;
+  font-size: 100px;
+  opacity: .4;
+  top: 50%;
+  transform: translate(0, -50%);
+  text-transform: capitalize;
+  color: rgb(85, 26, 139);
+}
+
+.demo-text-animate {
+  animation-name: demo-text-shadow;
+  animation-duration: 12s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  text-shadow: 0 0 .2em rgba(blue, .5);
+}
+
+.demo-left-angle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.2em;
+}
+
+.demo-left-mid-angle {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  font-size: 2em;
+  opacity: .5;
+}
+
+.demo-right-angle {
+  position: absolute;
+  top: 10%;
+  right: 2%;
+}
+
+.demo-right-mid-angle {
+  position: absolute;
+  bottom: 10%;
+  right: 6%;
+  font-size: 1.5em;
+  text-align: right;
+}
+
+.demo-bottom-mid-angle {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  font-size: 1.2em;
+  opacity: .3;
+  text-align: center;
+  transform: translate(-50%, 0);
+}
+
+.demo-dynamic {
+  position: absolute;
+  top: 5%;
+  right: 50%;
+  font-size: 1.1em;
+  opacity: .6;
+}
+
+.demo-smile {
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  font-size: 1.2em;
+}
+
+.demo-left-bottom {
+  position: absolute;
+  bottom: 3%;
+  left: 3%;
+  opacity: .8;
+  font-size: 1.3em;
+}
+
+.font-gluten {
+  font-family: "Gluten", cursive;
+}
+
+.font-noto {
+  font-family: "Noto Sans Mono", monospace;
+}
+
+.font-roboto {
+  font-family: "Roboto Slab", serif;
+}
+
+.font-oswald {
+  font-family: 'Oswald', sans-serif;
+}
+
+@keyframes demo-text-shadow {
+
+  from,
+  to {
+    text-shadow: 0 0 .2em rgba(blue, .5);
+  }
+
+  50% {
+    text-shadow: 0 0 .1em rgba(violet, .5);
+  }
+}

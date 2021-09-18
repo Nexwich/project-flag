@@ -1,0 +1,31 @@
+{
+  "name": "project-flag",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "js-build": "webpack --mode=production",
+    "styles-build": "compass compile"
+  },
+  "author": "",
+  "license": "ISC",
+  "global_packages": {
+    "_comment": "Если данные пакеты не установлены глобально, то перенесите их в devDependencies и выполните команду «npm i». Это обязательные пакеты для сборки.",
+    "sass": "^1.26.3",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "babel-loader": "^8.0.5",
+    "eslint": "^7.25.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "stylelint": "^13.12.0",
+    "stylelint-config-airbnb": "0.0.0",
+    "stylelint-scss": "^3.19.0",
+    "stylelint-order": "^4.1.0"
+  }
+}
