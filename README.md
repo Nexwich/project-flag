@@ -43,7 +43,7 @@ ProjectFlag.build(); // найдет все узлы с классом js-projec
 ```
 `.js-project-flag` не является обязательным в случае использования модуля.
 
-Будут созданы 3 строки с использованием указанноого html
+Будут созданы 3 строки с использованием указанного html
 ```js
 const element = document.getElementById('project-flag');
 const content = ['github.com', 'Nexwich', '<span>project-flag</span>'];
